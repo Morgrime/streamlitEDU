@@ -24,3 +24,9 @@ start_time = st.slider(
     value=datetime(2020, 1, 1, 9, 30),
     format="MM/DD/YY - hh:mm")
 st.write("Start time:", start_time)
+
+st.subheader('Select slider')
+selectSlider = st.select_slider(
+    label='Test slider',
+    options=['first', 'secodn', 'third', 'fourth'])
+st.write('Your chosen option is:', selectSlider)
